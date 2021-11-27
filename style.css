@@ -249,6 +249,17 @@
   .navbar.show .menu-list li a {
     margin-left: 0px;
   }
+
+  .members-list{
+    grid-template-columns: auto auto;
+  }
+
+}
+
+@media (max-width: 500px) {
+  .members-list{
+    grid-template-columns: auto;
+  }
 }
 
 @media (max-width: 380px) {
