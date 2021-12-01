@@ -19,13 +19,23 @@ window.onscroll = () => {
 };
 
 //popup region start
-var modal = document.getElementById("popup");
+var modal = document.getElementsByClassName("popup"); // ell erreur mte3ek houni 5ater el Model dima Ye54 fi awel wa7da mawjoud fiha Popup
 var btn = document.getElementById("btn");
 var exit = document.getElementsByClassName("close")[0];
+
 // Zedt he4i  esta3mel el JQuery 
-$(document).on("click","#btn",function(){
-  modal.style.display = "block";
+$(document).ready(function(){
+  $(document).on("click","#btn1",function(){
+      modal.style.display = "block";
+  });
+  $(document).on("click","#btn2",function(){
+      modal.style.display = "block";
+  });
+
 });
+
+
+
 // btn.onclick = function () {
 //   modal.style.display = "block";
 // };
