@@ -19,7 +19,7 @@ window.onscroll = () => {
 };
 
 //popup region start
-var modal = document.getElementById("popup");
+var modal = document.getElementByClassName("popup");
 var btn = document.getElementById("btn");
 var exit = document.getElementsByClassName("close")[0];
 btn.onclick = function () {
