@@ -22,13 +22,9 @@ window.onscroll = () => {
 var modal = document.getElementById("popup");
 var btn = document.getElementById("btn");
 var exit = document.getElementsByClassName("close")[0];
-// Zedt he4i  esta3mel el JQuery 
-$(document).on("click","#btn",function(){
+btn.onclick = function () {
   modal.style.display = "block";
-});
-// btn.onclick = function () {
-//   modal.style.display = "block";
-// };
+};
 
 exit.onclick = function () {
   modal.style.display = "none";
