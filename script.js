@@ -144,4 +144,38 @@ window.onclick = function (event) {
   }
 };
 //popup6 region end
+
+var actButt = document.getElementById('act-button1');
+actButt.onclick = function(){
+  Swal.fire({
+    title: 'First',
+    text: 'First Popup Description in Script.JS LINE 162',
+    imageUrl: 'images/arduino-training.jpg',
+    imageWidth: 400,
+    imageHeight: 200,
+    imageAlt: 'Custom image',
+  })
+}
+var actButt2 = document.getElementById('act-button2');
+actButt2.onclick = function(){
+  Swal.fire({
+    title: 'Second',
+    text: 'Second Popup Description in Script.JS LINE 169.',
+    imageUrl: 'images/arduino-training.jpg',
+    imageWidth: 400,
+    imageHeight: 200,
+    imageAlt: 'Custom image',
+  })
+}
+var actButt3 = document.getElementById('act-button3');
+actButt3.onclick = function(){
+  Swal.fire({
+    title: 'Third!',
+    text: 'Third Popup Description in Script.JS LINE 180.',
+    imageUrl: 'images/arduino-training.jpg',
+    imageWidth: 400,
+    imageHeight: 200,
+    imageAlt: '',
+  })
+}
 1;
