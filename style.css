@@ -17,6 +17,7 @@
   max-width: 1250px;
   margin: auto;
   padding: 0 30px;
+  margin-bottom: 30px;
 }
 
 /* navbar region start */
@@ -37,6 +38,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 0px !important;
 }
 
 .navbar .logo a {
@@ -94,6 +96,7 @@
   font-weight: 700;
   text-align: center;
   padding: 30px 0 0 0;
+  margin-bottom: 40px;
 }
 
 /* members region start */
@@ -185,20 +188,86 @@
   padding: 20px;
 }
 
-.close {
+.close,
+.close1,
+.close2,
+.close3,
+.close4,
+.close5,
+.close6 {
   color: #aaaaaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
 
-.close:hover {
+.close:hover,
+.close1:hover,
+.close2:hover,
+.close3:hover,
+.close4:hover,
+.close5:hover,
+.close6:hover {
   color: #000;
   text-decoration: none;
   cursor: pointer;
 }
 /* popup region end */
 /* members region end */
+
+/* activities region start */
+.activities-display {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 19px;
+}
+.activity {
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.act-img {
+  margin-bottom: 10px;
+  width: 350px;
+  height: 200px;
+  border-radius: 5px;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.act-img:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.act-title {
+  text-align: center;
+}
+
+.act-button {
+  padding: 10px;
+  background-color: var(--secondary);
+  border: 0px;
+  border-radius: 5px;
+  width: 34%;
+  align-self: center;
+}
+
+.act-button:hover {
+  background-color: rgb(130, 206, 231);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.act-button > a {
+  text-decoration: none;
+  font-size: medium;
+  color: var(--light);
+}
+/* activities region end */
 
 /* footer region start */
 .container {
@@ -240,6 +309,15 @@
 .socials,
 .contact {
   justify-self: center;
+}
+
+.socials > ul > a {
+  text-decoration: none;
+  color: white;
+}
+
+.socials > ul > a:hover {
+  color: var(--secondary);
 }
 
 .copyright {

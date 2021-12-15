@@ -39,7 +39,7 @@ window.onclick = function (event) {
 //popup1 region start
 var modal1 = document.getElementById("popup1");
 var btn1 = document.getElementById("btn1");
-var exit = document.getElementsByClassName("close")[0];
+var exit = document.getElementsByClassName("close1")[0];
 btn1.onclick = function () {
   modal1.style.display = "block";
 };
@@ -57,7 +57,7 @@ window.onclick = function (event) {
 //popup2 region start
 var modal2 = document.getElementById("popup2");
 var btn2 = document.getElementById("btn2");
-var exit = document.getElementsByClassName("close")[0];
+var exit = document.getElementsByClassName("close2")[0];
 btn2.onclick = function () {
   modal2.style.display = "block";
 };
@@ -75,7 +75,7 @@ window.onclick = function (event) {
 //popup3 region start
 var modal3 = document.getElementById("popup3");
 var btn3 = document.getElementById("btn3");
-var exit = document.getElementsByClassName("close")[0];
+var exit = document.getElementsByClassName("close3")[0];
 btn3.onclick = function () {
   modal3.style.display = "block";
 };
@@ -93,7 +93,7 @@ window.onclick = function (event) {
 //popup4 region start
 var modal4 = document.getElementById("popup4");
 var btn4 = document.getElementById("btn4");
-var exit = document.getElementsByClassName("close")[0];
+var exit = document.getElementsByClassName("close4")[0];
 btn4.onclick = function () {
   modal4.style.display = "block";
 };
@@ -111,7 +111,7 @@ window.onclick = function (event) {
 //popup5 region start
 var modal5 = document.getElementById("popup5");
 var btn5 = document.getElementById("btn5");
-var exit = document.getElementsByClassName("close")[0];
+var exit = document.getElementsByClassName("close5")[0];
 btn5.onclick = function () {
   modal5.style.display = "block";
 };
@@ -129,7 +129,7 @@ window.onclick = function (event) {
 //popup6 region start
 var modal6 = document.getElementById("popup6");
 var btn6 = document.getElementById("btn6");
-var exit = document.getElementsByClassName("close")[0];
+var exit = document.getElementsByClassName("close6")[0];
 btn6.onclick = function () {
   modal6.style.display = "block";
 };
