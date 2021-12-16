@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+    <!-- navbar region start -->
+    <nav class="navbar">
+        <div class="content">
+            <div class="logo">
+                <a href="/home.html">logo</a>
+            </div>
+            <ul class="menu-list">
+                <div class="icon cancel-btn">
+                    <i class="fas fa-times"></i>
+                </div>
+                <li><a href="/home.html">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a class="current" href="/contact.html">Contact</a></li>
+                <li><a href="/form.html">Join Us</a></li>
+            </ul>
+            <div class="icon menu-btn">
+                <i class="fas fa-bars about-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar region end -->
+
+    <div class="contactbackground"></div>
+
+    <div class="contact-container">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3899.479364272588!2d10.737767842056282!3d34.728930280084505!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7a82ded557c84c94!2sInstitut%20International%20de%20Technologie!5e0!3m2!1sen!2stn!4v1639678392931!5m2!1sen!2stn"
+            width="600" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <form action="submit" class="contact-form">
+            <h2>We want to hear from you!</h2>
+            <input type="text" id="name" name="name" required placeholder="Your name">
+            <input type="email" id="email" name="email" required placeholder="Your email">
+            <input type="text" id="subject" name="subject" required placeholder="Subject">
+            <textarea type="text" id="message" name="message" required placeholder="Message" rows="4">
+            </textarea>
+            <button type="submit" name="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -78,7 +78,7 @@
 }
 
 .icon {
-  color: var(--dark);
+  color: var(--light);
   font-size: 20px;
   cursor: pointer;
   display: none;
@@ -90,6 +90,7 @@
   top: 20px;
   color: var(--light);
 }
+
 /* navbar region end */
 
 .background {
