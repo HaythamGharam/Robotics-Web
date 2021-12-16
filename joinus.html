@@ -6,10 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Join Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="join.css">
 </head>
 
 <body>
-    <nav class="navbar">
+    <nav class="navbar" style="position: relative !important; background-color: black;">
         <div class="content">
             <div class="logo">
                 <a href="/home.html">logo</a>
@@ -18,17 +20,50 @@
                 <div class="icon cancel-btn">
                     <i class="fas fa-times bars"></i>
                 </div>
-                <li><a class="current" href="/home.html">Home</a></li>
+                <li><a href="/home.html">Home</a></li>
                 <li><a href="/about.html">About</a></li>
                 <li><a href="/contact.html">Contact</a></li>
-                <li><a href="/form.html">Join Us</a></li>
+                <li><a class="current" href="/form.html">Join Us</a></li>
             </ul>
             <div class="icon menu-btn">
                 <i class="fas fa-bars"></i>
             </div>
         </div>
     </nav>
-
+    <div class="form-holder">
+        <div>
+            <h3>Fill out this form to join us!</h3>
+        </div>
+        <form method="post">
+            <div class="form-item">
+                <label for="name">Full Name:</label>
+                <input type="text" class="" name="name" placeholder="Full Name" required><br>
+            </div>
+            <div class="form-item">
+                <label for="email">Email:</label><br>
+                <input type="email" class="" name="email" placeholder="example@example.com" required><br>
+            </div>
+            <div class="form-item">
+                <label for="dob">Date of birth:</label>
+                <input type="date" class="" name="dob" id="dob"><br>
+            </div>
+            <div class="form-item">
+                <label for="fieldOfStudies">Level of studies:</label>
+                <input type="text" name="fieldOfStudies" class="" placeholder="Ex : Master | Licence ..."> <br>
+            </div>
+            <div class="form-item">
+                <label for="class">Class:</label><br>
+                <input type="text" name="class" class="" placeholder="Class : 1ere | 2eme"> <br>
+            </div>
+            <div class="form-item">
+                <label for="phone">Phone number:</label>
+                <input type="tel" name="phone" class="" placeholder="Ex : 22222222" pattern="[1-9]{8}"><br>
+            </div>
+            <div class="form-item">
+                <input type="submit" value="Inscrire" name="inscrire">
+            </div>
+        </form>
+    </div>
     <!-- footer -->
     <div class="footer">
         <div class="container">
