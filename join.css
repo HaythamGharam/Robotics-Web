@@ -1,35 +1,353 @@
-.form-holder {
-  border: 1px solid lightgray;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.signupbackground {
+  background: url("images/signup.png") no-repeat;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+/* navbar region start */
+.mynavbar {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  padding: 15px 0;
+  transition: all 0.3s ease;
+}
+
+.mynavbar.sticky {
+  background-color: #000000;
+  padding: 10px 0;
+}
+
+.mynavbar .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0px !important;
+}
+
+.mynavbar .logo a {
+  height: 20px;
+  width: 20px;
+  text-decoration: none;
+}
+
+.mynavbar .menu-list {
+  display: inline-flex;
+}
+
+.menu-list li {
+  list-style: none;
+}
+
+.menu-list li a {
+  color: var(--light);
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.menu-list li a:hover {
+  background-color: var(--primary);
+  padding: 10px;
   border-radius: 5px;
-  box-shadow: 1px 2px lightgray;
-  margin: 5% 20%;
-  display: grid;
-  padding: 90px;
-  padding-top: 60px;
 }
 
-.form-holder > div > h3 {
-  text-align: center;
-  margin-bottom: 3%;
-}
-
-.form-item {
-  padding: 20px;
-}
-input {
-  padding: 15px;
-  border: 1px solid lightgray;
-  box-shadow: 0.5px 1px lightgray;
-  border-radius: 5px;
-  width: 90%;
-}
-
-input[type="submit"] {
-  background-color: rgb(105, 187, 105);
-  font-size: large;
-}
-
-input[type="submit"]:hover {
-  background-color: rgb(83, 190, 83);
+.icon {
+  color: var(--light);
+  font-size: 20px;
   cursor: pointer;
+  display: none;
+}
+
+.menu-list .cancel-btn {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  color: var(--light);
+}
+
+/* navbar region end */
+html {
+  height: 100%;
+}
+
+p {
+  color: grey;
+}
+
+#heading {
+  text-transform: uppercase;
+  color: #673ab7;
+  font-weight: normal;
+}
+
+#msform {
+  text-align: center;
+  position: relative;
+  margin-top: 20px;
+}
+
+#msform fieldset {
+  background: white;
+  border: 0 none;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-card {
+  text-align: left;
+}
+
+#msform fieldset:not(:first-of-type) {
+  display: none;
+}
+
+#msform input,
+#msform textarea {
+  padding: 8px 15px 8px 15px;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  margin-bottom: 25px;
+  margin-top: 2px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: montserrat;
+  color: #2c3e50;
+  background-color: #eceff1;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+#msform input:focus,
+#msform textarea:focus {
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border: 1px solid #673ab7;
+  outline-width: 0;
+}
+
+#msform .action-button {
+  width: 100px;
+  background: #673ab7;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 0px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 0px 10px 5px;
+  float: right;
+}
+
+#msform .action-button:hover,
+#msform .action-button:focus {
+  background-color: #311b92;
+}
+
+#msform .action-button-previous {
+  width: 100px;
+  background: #616161;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 0px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px 10px 0px;
+  float: right;
+}
+
+#msform .action-button-previous:hover,
+#msform .action-button-previous:focus {
+  background-color: #000000;
+}
+
+.card {
+  z-index: 0;
+  border: none;
+  position: relative;
+}
+
+.fs-title {
+  font-size: 25px;
+  color: #673ab7;
+  margin-bottom: 15px;
+  font-weight: normal;
+  text-align: left;
+}
+
+.purple-text {
+  color: #673ab7;
+  font-weight: normal;
+}
+
+.steps {
+  font-size: 25px;
+  color: gray;
+  margin-bottom: 10px;
+  font-weight: normal;
+  text-align: right;
+}
+
+.fieldlabels {
+  color: gray;
+  text-align: left;
+}
+
+#progressbar {
+  margin-bottom: 30px;
+  overflow: hidden;
+  color: lightgrey;
+}
+
+#progressbar .active {
+  color: #673ab7;
+}
+
+#progressbar li {
+  list-style-type: none;
+  font-size: 15px;
+  width: 25%;
+  float: left;
+  position: relative;
+  font-weight: 400;
+}
+
+#progressbar #account:before {
+  font-family: FontAwesome;
+  content: "\f13e";
+}
+
+#progressbar #personal:before {
+  font-family: FontAwesome;
+  content: "\f007";
+}
+
+#progressbar #payment:before {
+  font-family: FontAwesome;
+  content: "\f030";
+}
+
+#progressbar #confirm:before {
+  font-family: FontAwesome;
+  content: "\f00c";
+}
+
+#progressbar li:before {
+  width: 50px;
+  height: 50px;
+  line-height: 45px;
+  display: block;
+  font-size: 20px;
+  color: #ffffff;
+  background: lightgray;
+  border-radius: 50%;
+  margin: 0 auto 10px auto;
+  padding: 2px;
+}
+
+#progressbar li:after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: lightgray;
+  position: absolute;
+  left: 0;
+  top: 25px;
+  z-index: -1;
+}
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+  background: #673ab7;
+}
+
+.progress {
+  height: 20px;
+}
+
+.progress-bar {
+  background-color: #673ab7;
+}
+
+.fit-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.footer {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.container {
+  margin: auto;
+}
+
+.rowfooter {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: white;
+}
+
+.row2 {
+  display: grid;
+  color: white;
+}
+
+.col > ul {
+  list-style: none;
+  padding: 0 10px;
+}
+
+.footer {
+  background-color: black;
+  padding: 70px 0 0 0;
+}
+
+.col {
+  padding: 0 20px;
+}
+
+.site-nav {
+  color: white;
+  display: block;
+  text-decoration: none;
+}
+
+.nav-map,
+.socials,
+.contact {
+  justify-self: center;
+}
+
+.socials > ul > a {
+  text-decoration: none;
+  color: white;
+}
+
+.socials > ul > a:hover {
+  color: var(--secondary);
+}
+
+.copyright {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  text-align: center;
 }

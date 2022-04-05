@@ -26,7 +26,7 @@
 }
 
 /* navbar region start */
-.navbar {
+.mynavbar {
   position: fixed;
   width: 100%;
   z-index: 2;
@@ -34,26 +34,26 @@
   transition: all 0.3s ease;
 }
 
-.navbar.sticky {
+.mynavbar.sticky {
   background: var(--dark);
   padding: 10px 0;
 }
 
-.navbar .content {
+.mynavbar .content {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 0px !important;
 }
 
-.navbar .logo a {
+.mynavbar .logo a {
   color: var(--light);
   font-size: 30px;
   font-weight: 600;
   text-decoration: none;
 }
 
-.navbar .menu-list {
+.mynavbar .menu-list {
   display: inline-flex;
 }
 
@@ -91,7 +91,7 @@
   color: var(--light);
 }
 
-/* navbar region end */
+/* mynavbar region end */
 
 .background {
   background: url("images/background.jpg") no-repeat;
@@ -439,7 +439,7 @@
     display: none;
   }
 
-  .navbar .menu-list {
+  .mynavbar .menu-list {
     position: fixed;
     height: 100vh;
     width: 100%;
@@ -453,22 +453,22 @@
     transition: all 0.3s ease;
   }
 
-  .navbar.show .menu-list {
+  .mynavbar.show .menu-list {
     left: 0%;
     background: var(--dark);
   }
 
-  .navbar .menu-list li {
+  .mynavbar .menu-list li {
     margin-top: 45px;
   }
 
-  .navbar .menu-list li a {
+  .mynavbar .menu-list li a {
     font-size: 23px;
     margin-left: -100%;
     transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
 
-  .navbar.show .menu-list li a {
+  .mynavbar.show .menu-list li a {
     margin-left: 0px;
   }
 
@@ -488,7 +488,7 @@
 }
 
 @media (max-width: 380px) {
-  .navbar .logo a {
+  .mynavbar .logo a {
     font-size: 27px;
   }
 }
