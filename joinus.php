@@ -39,11 +39,11 @@
                 <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
                     <h2 id="heading">Sign Up Your User Account</h2>
                     <p>Fill all form field to go to next step</p>
-                    <form id="msform">
+                    <form id="msform"  enctype="multipart/form-data">
                         <!-- progressbar -->
                         <ul id="progressbar">
-                            <li class="active" id="account"><strong>Account</strong></li>
-                            <li id="personal"><strong>Personal</strong></li>
+                            <li class="active" id="account"><strong>Information Personnelles</strong></li>
+                            <li id="personal"><strong>Formation Academique</strong></li>
                             <li id="payment"><strong>Image</strong></li>
                             <li id="confirm"><strong>Finish</strong></li>
                         </ul>
@@ -55,7 +55,7 @@
                             <div class="form-card">
                                 <div class="row">
                                     <div class="col-7">
-                                        <h2 class="fs-title">Account Information:</h2>
+                                        <h2 class="fs-title">Information Personnelles:</h2>
                                     </div>
                                     <div class="col-5">
                                         <h2 class="steps">Step 1 - 4</h2>
@@ -68,7 +68,7 @@
                                 <input type="date" name="uname" placeholder="Date of Birth">
                                 <!-- dob end -->
                                 <label class="fieldlabels">Phone Number: *</label>
-                                <input type="text" name="pwd" placeholder="Ex : 22222222"> 
+                                <input type="tel" name="pwd" pattern="[0-9]{8}" placeholder="Ex : 22222222"> 
                                 <!-- Phone Number end  -->
                                 <label class="fieldlabels">Address : *</label>
                                 <input type="text" name="cpwd" placeholder="Ex: Route Mharza km1 ">
@@ -87,12 +87,12 @@
                                 </div> 
                                 <label class="fieldlabels">Etablissement : *</label>
                                 <input type="text" name="fname" placeholder="First Name" >
-                                <label class="fieldlabels">Filiere: *</label> 
-                                <input type="text" name="lname" placeholder="Last Name">
-                                <label class="fieldlabels">Contact No.: *</label>
-                                <input type="text" name="phno" placeholder="Contact No.">
-                                <label class="fieldlabels">Alternate Contact No.: *</label> 
-                                <input type="text" name="phno_2" placeholder="Alternate Contact No.">
+                                <label class="fieldlabels">Filiere Actuelle : *</label> 
+                                <input type="text" name="lname" placeholder="Ex : Génie Mecanique |Génie Informatique  ...">
+                                <label class="fieldlabels">Etablissement d'enseignement Supperieur précédent.: *</label>
+                                <input type="text" name="phno" placeholder="Ex: FSEGS | PREPA | ISIMS ...">
+                                <label class="fieldlabels">Filière Précédente.: *</label> 
+                                <input type="text" name="phno_2" placeholder="Ex : Informatique de gestion ...">
                             </div> 
                             <input type="button" name="next" class="next action-button" value="Next">
                             <input type="button" name="previous" class="previous action-button-previous" value="Previous">
@@ -132,7 +132,9 @@
                                 </div> <br><br>
                                 <div class="row justify-content-center">
                                     <div class="col-7 text-center">
-                                        <h5 class="purple-text text-center">You Have Successfully Signed Up</h5>
+                                        <h5 class="purple-text text-center">
+                                            <span>votre demande d'adhésion à notre club a été envoyée !</span> </br>nous vous appellerons bientôt  
+                                        </h5>
                                     </div>
                                 </div>
                             </div>
