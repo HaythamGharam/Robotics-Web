@@ -12,7 +12,7 @@
 <body>
     <nav class="mynavbar">
         <div class="logo">
-            <a href="/home.html"><img class="logo" src="/images/logo.png" height="50px"></a>
+            <a href="./home.php"><img class="logo" src="./images/logo.png" height="50px"></a>
         </div>
         <div class="navcontent">
 
@@ -20,10 +20,10 @@
                 <div class="icon cancel-btn">
                     <i class="fas fa-times bars"></i>
                 </div>
-                <li><a href="/home.html">Home</a></li>
-                <li><a href="/about.html">About</a></li>
-                <li><a href="/contact.html">Contact</a></li>
-                <li><a class="current" href="/joinus.html">Join Us</a></li>
+                <li><a href="./home.php">Home</a></li>
+                <li><a href="./about.php">About</a></li>
+                <li><a href="./contact.php">Contact</a></li>
+                <li><a class="current" href="./joinus.php">Join Us</a></li>
             </ul>
             <div class="icon menu-btn">
                 <i class="fas fa-bars"></i>
@@ -60,31 +60,42 @@
                                     <div class="col-5">
                                         <h2 class="steps">Step 1 - 4</h2>
                                     </div>
-                                </div> <label class="fieldlabels">Email: *</label> <input type="email" name="email"
-                                    placeholder="Email Id"> <label class="fieldlabels">Username: *</label> <input
-                                    type="text" name="uname" placeholder="UserName"> <label
-                                    class="fieldlabels">Password: *</label> <input type="password" name="pwd"
-                                    placeholder="Password"> <label class="fieldlabels">Confirm Password: *</label>
-                                <input type="password" name="cpwd" placeholder="Confirm Password">
-                            </div> <input type="button" name="next" class="next action-button" value="Next">
+                                </div>
+                                <label class="fieldlabels">Email: *</label> 
+                                <input type="email" name="email" placeholder="Email ">
+                                <!-- Email end  -->
+                                <label class="fieldlabels">Date of Birth : *</label>
+                                <input type="date" name="uname" placeholder="Date of Birth">
+                                <!-- dob end -->
+                                <label class="fieldlabels">Phone Number: *</label>
+                                <input type="text" name="pwd" placeholder="Ex : 22222222"> 
+                                <!-- Phone Number end  -->
+                                <label class="fieldlabels">Address : *</label>
+                                <input type="text" name="cpwd" placeholder="Ex: Route Mharza km1 ">
+                            </div>
+                            <input type="button" name="next" class="next action-button" value="Next">
                         </fieldset>
                         <fieldset>
                             <div class="form-card">
                                 <div class="row">
                                     <div class="col-7">
-                                        <h2 class="fs-title">Personal Information:</h2>
+                                        <h2 class="fs-title">Formation Academique:</h2>
                                     </div>
                                     <div class="col-5">
                                         <h2 class="steps">Step 2 - 4</h2>
                                     </div>
-                                </div> <label class="fieldlabels">First Name: *</label> <input type="text" name="fname"
-                                    placeholder="First Name"> <label class="fieldlabels">Last Name: *</label> <input
-                                    type="text" name="lname" placeholder="Last Name"> <label class="fieldlabels">Contact
-                                    No.: *</label> <input type="text" name="phno" placeholder="Contact No."> <label
-                                    class="fieldlabels">Alternate Contact No.: *</label> <input type="text"
-                                    name="phno_2" placeholder="Alternate Contact No.">
-                            </div> <input type="button" name="next" class="next action-button" value="Next"> <input
-                                type="button" name="previous" class="previous action-button-previous" value="Previous">
+                                </div> 
+                                <label class="fieldlabels">Etablissement : *</label>
+                                <input type="text" name="fname" placeholder="First Name" >
+                                <label class="fieldlabels">Filiere: *</label> 
+                                <input type="text" name="lname" placeholder="Last Name">
+                                <label class="fieldlabels">Contact No.: *</label>
+                                <input type="text" name="phno" placeholder="Contact No.">
+                                <label class="fieldlabels">Alternate Contact No.: *</label> 
+                                <input type="text" name="phno_2" placeholder="Alternate Contact No.">
+                            </div> 
+                            <input type="button" name="next" class="next action-button" value="Next">
+                            <input type="button" name="previous" class="previous action-button-previous" value="Previous">
                         </fieldset>
                         <fieldset>
                             <div class="form-card">
@@ -95,11 +106,14 @@
                                     <div class="col-5">
                                         <h2 class="steps">Step 3 - 4</h2>
                                     </div>
-                                </div> <label class="fieldlabels">Upload Your Photo:</label> <input type="file"
-                                    name="pic" accept="image/*"> <label class="fieldlabels">Upload Signature
-                                    Photo:</label> <input type="file" name="pic" accept="image/*">
-                            </div> <input type="button" name="next" class="next action-button" value="Submit"> <input
-                                type="button" name="previous" class="previous action-button-previous" value="Previous">
+                                </div> 
+                                <label class="fieldlabels">Upload Your Photo:</label>
+                                <input type="file" name="pic" accept="image/*"> 
+                                <label class="fieldlabels">Upload Signature Photo:</label> 
+                                <input type="file" name="pic" accept="image/*">
+                            </div>
+                            <input type="button" name="next" class="next action-button" value="Submit"> 
+                            <input type="button" name="previous" class="previous action-button-previous" value="Previous">
                         </fieldset>
                         <fieldset>
                             <div class="form-card">

@@ -15,7 +15,7 @@
     <!-- navbar region start -->
     <nav class="mynavbar">
         <div class="logo">
-            <a href="/home.html"><img class="logo" src="/images/logo.png" height="50px"></a>
+            <a href="/home.php"><img class="logo" src="./images/logo.png" height="50px"></a>
         </div>
         <div class="navcontent">
 
@@ -23,10 +23,10 @@
                 <div class="icon cancel-btn">
                     <i class="fas fa-times"></i>
                 </div>
-                <li><a href="/home.html">Home</a></li>
-                <li><a class="current" href="/about.html">About</a></li>
-                <li><a href="/contact.html">Contact</a></li>
-                <li><a href="/joinus.html">Join Us</a></li>
+                <li><a href="./home.php">Home</a></li>
+                <li><a class="current" href="./about.php">About</a></li>
+                <li><a href="./contact.php">Contact</a></li>
+                <li><a href="./joinus.php">Join Us</a></li>
             </ul>
             <div class="icon menu-btn">
                 <i class="fas fa-bars about-bars"></i>
