@@ -1,3 +1,27 @@
+<?php
+    @set_time_limit(0);
+    error_reporting(0);
+    session_start();
+    require_once("class.contact.php");
+    $contact = new Contact(); 
+    if(isset($_REQUEST["submit"])){
+        extract($_REQUEST);
+        $name = $_POST["name"];
+        $email= $_POST["email"]; 
+        $subject= $_POST["subject"] ; 
+        $message =$_POST["message"];
+        if(filter_var($email,FILTER_VALIDATE_EMAIL)){
+            if($contact->contact($name,$email,$subject,$message)==1){
+                $_SESSION["success"] = "votre email a bien été envoyé ";
+            }else{
+                $_SESSION["error"] = "Erreur lors de l'envoi de votre email!</br> Veuillez réessayer ";
+            }
+        }else {
+            $_SESSION["error"] = "Verifier votre Email! ";
+        }
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,7 +39,7 @@
     <!-- navbar region start -->
     <nav class="mynavbar">
         <div class="logo">
-            <a href="./home.php"><img class="logo" src="/images/logo.png" height="50px"></a>
+            <a href="./home.php"><img class="logo" src="./images/logo.png" height="50px"></a>
         </div>
         <div class="navcontent">
 
@@ -41,14 +65,22 @@
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3899.479364272588!2d10.737767842056282!3d34.728930280084505!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7a82ded557c84c94!2sInstitut%20International%20de%20Technologie!5e0!3m2!1sen!2stn!4v1639678392931!5m2!1sen!2stn"
             width="600" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        <form action="submit" class="contact-form">
+        <form method="POST" class="contact-form">
+        <?php
+                if(isset($_SESSION["error"])){
+                    echo"<center><span style='color:red'>".$_SESSION['error']."</span></center>";
+                }
+                if(isset($_SESSION["error"])){
+                    echo"<center><span style='color:green'>".$_SESSION['success']."</span></center>";
+                }
+            
+            ?>
             <h2>We want to hear from you!</h2>
             <input type="text" id="name" name="name" required placeholder="Your name">
             <input type="email" id="email" name="email" required placeholder="Your email">
             <input type="text" id="subject" name="subject" required placeholder="Subject">
-            <textarea type="text" id="message" name="message" required placeholder="Message" rows="4">
-            </textarea>
-            <button type="submit" name="submit">Submit</button>
+            <textarea type="text" id="message" name="message" required placeholder="Message" rows="4"></textarea>
+            <button type="submit" name="submit">Send!</button>
         </form>
     </div>
 

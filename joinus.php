@@ -44,6 +44,7 @@
                         <ul id="progressbar">
                             <li class="active" id="account"><strong>Information Personnelles</strong></li>
                             <li id="personal"><strong>Formation Academique</strong></li>
+                            
                             <li id="payment"><strong>Image</strong></li>
                             <li id="confirm"><strong>Finish</strong></li>
                         </ul>
@@ -127,7 +128,7 @@
                                 </div> <br><br>
                                 <h2 class="purple-text text-center"><strong>SUCCESS !</strong></h2> <br>
                                 <div class="row justify-content-center">
-                                    <div class="col-3"> <img src="https://i.imgur.com/GwStPmg.png" class="fit-image">
+                                    <div class="col-3"> <img src="./images/success.png" class="fit-image">
                                     </div>
                                 </div> <br><br>
                                 <div class="row justify-content-center">
