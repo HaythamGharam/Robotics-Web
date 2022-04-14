@@ -1,3 +1,13 @@
+
+<?php 
+    // include class join
+    @set_time_limit(0); 
+    error_reporting(0); 
+    require("class.joinus.php");
+    $join = new JoinUs();
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -39,7 +49,7 @@
                 <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
                     <h2 id="heading">Sign Up Your User Account</h2>
                     <p>Fill all form field to go to next step</p>
-                    <form id="msform"  enctype="multipart/form-data">
+                    <form id="msform"  method="post"  enctype="multipart/form-data">
                         <!-- progressbar -->
                         <ul id="progressbar">
                             <li class="active" id="account"><strong>Information Personnelles</strong></li>
