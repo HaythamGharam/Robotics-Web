@@ -18,132 +18,101 @@ window.onscroll = () => {
     : navbar.classList.remove("sticky");
 };
 
-//popup region start
-var modal = document.getElementById("popup");
-var btn = document.getElementById("btn");
-var exit = document.getElementsByClassName("close")[0];
-btn.onclick = function () {
-  modal.style.display = "block";
+var memBtn = document.getElementById("mem-btn");
+memBtn.onclick = function () {
+  Swal.fire({
+    title: "Chairman",
+    text: "Hello, my name is Mohamed Yessine Ksibi I am 23 Years old and I am a mechanical engineering student in the IIT",
+    imageUrl: "images/members/yessine.jpg",
+    imageWidth: 200,
+    imageHeight: 200,
+    imageAlt: "Custom image",
+  });
 };
 
-exit.onclick = function () {
-  modal.style.display = "none";
+var memBtn1 = document.getElementById("mem-btn1");
+memBtn1.onclick = function () {
+  Swal.fire({
+    title: "General Secretary",
+    text: "Modal with a custom image.",
+    imageUrl: "https://unsplash.it/400/200",
+    imageWidth: 400,
+    imageHeight: 200,
+    imageAlt: "Custom image",
+  });
 };
 
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-};
-//popup region end
-//popup1 region start
-var modal1 = document.getElementById("popup1");
-var btn1 = document.getElementById("btn1");
-var exit = document.getElementsByClassName("close1")[0];
-btn1.onclick = function () {
-  modal1.style.display = "block";
+var memBtn2 = document.getElementById("mem-btn2");
+memBtn2.onclick = function () {
+  Swal.fire({
+    title: "Sweet!",
+    text: "Modal with a custom image.",
+    imageUrl: "https://unsplash.it/400/200",
+    imageWidth: 400,
+    imageHeight: 200,
+    imageAlt: "Custom image",
+  });
 };
 
-exit.onclick = function () {
-  modal1.style.display = "none";
+var memBtn3 = document.getElementById("mem-btn3");
+memBtn3.onclick = function () {
+  Swal.fire({
+    title: "Sweet!",
+    text: "Modal with a custom image.",
+    imageUrl: "https://unsplash.it/400/200",
+    imageWidth: 400,
+    imageHeight: 200,
+    imageAlt: "Custom image",
+  });
 };
 
-window.onclick = function (event) {
-  if (event.target == modal1) {
-    modal1.style.display = "none";
-  }
-};
-//popup1 region end
-//popup2 region start
-var modal2 = document.getElementById("popup2");
-var btn2 = document.getElementById("btn2");
-var exit = document.getElementsByClassName("close2")[0];
-btn2.onclick = function () {
-  modal2.style.display = "block";
+var memBtn4 = document.getElementById("mem-btn4");
+memBtn4.onclick = function () {
+  Swal.fire({
+    title: "Sweet!",
+    text: "Modal with a custom image.",
+    imageUrl: "https://unsplash.it/400/200",
+    imageWidth: 400,
+    imageHeight: 200,
+    imageAlt: "Custom image",
+  });
 };
 
-exit.onclick = function () {
-  modal2.style.display = "none";
+var memBtn5 = document.getElementById("mem-btn5");
+memBtn5.onclick = function () {
+  Swal.fire({
+    title: "Sweet!",
+    text: "Modal with a custom image.",
+    imageUrl: "https://unsplash.it/400/200",
+    imageWidth: 400,
+    imageHeight: 200,
+    imageAlt: "Custom image",
+  });
 };
 
-window.onclick = function (event) {
-  if (event.target == modal2) {
-    modal2.style.display = "none";
-  }
-};
-//popup2 region end
-//popup3 region start
-var modal3 = document.getElementById("popup3");
-var btn3 = document.getElementById("btn3");
-var exit = document.getElementsByClassName("close3")[0];
-btn3.onclick = function () {
-  modal3.style.display = "block";
+var memBtn6 = document.getElementById("mem-btn6");
+memBtn6.onclick = function () {
+  Swal.fire({
+    title: "Sweet!",
+    text: "Modal with a custom image.",
+    imageUrl: "https://unsplash.it/400/200",
+    imageWidth: 400,
+    imageHeight: 200,
+    imageAlt: "Custom image",
+  });
 };
 
-exit.onclick = function () {
-  modal3.style.display = "none";
+var memBtn7 = document.getElementById("mem-btn7");
+memBtn7.onclick = function () {
+  Swal.fire({
+    title: "Sweet!",
+    text: "Modal with a custom image.",
+    imageUrl: "https://unsplash.it/400/200",
+    imageWidth: 400,
+    imageHeight: 200,
+    imageAlt: "Custom image",
+  });
 };
-
-window.onclick = function (event) {
-  if (event.target == modal3) {
-    modal3.style.display = "none";
-  }
-};
-//popup3 region end
-//popup4 region start
-var modal4 = document.getElementById("popup4");
-var btn4 = document.getElementById("btn4");
-var exit = document.getElementsByClassName("close4")[0];
-btn4.onclick = function () {
-  modal4.style.display = "block";
-};
-
-exit.onclick = function () {
-  modal4.style.display = "none";
-};
-
-window.onclick = function (event) {
-  if (event.target == modal4) {
-    modal4.style.display = "none";
-  }
-};
-//popup4 region end
-//popup5 region start
-var modal5 = document.getElementById("popup5");
-var btn5 = document.getElementById("btn5");
-var exit = document.getElementsByClassName("close5")[0];
-btn5.onclick = function () {
-  modal5.style.display = "block";
-};
-
-exit.onclick = function () {
-  modal5.style.display = "none";
-};
-
-window.onclick = function (event) {
-  if (event.target == modal5) {
-    modal5.style.display = "none";
-  }
-};
-//popup5 region end
-//popup6 region start
-var modal6 = document.getElementById("popup6");
-var btn6 = document.getElementById("btn6");
-var exit = document.getElementsByClassName("close6")[0];
-btn6.onclick = function () {
-  modal6.style.display = "block";
-};
-
-exit.onclick = function () {
-  modal6.style.display = "none";
-};
-
-window.onclick = function (event) {
-  if (event.target == modal6) {
-    modal6.style.display = "none";
-  }
-};
-//popup6 region end
 
 var actButt = document.getElementById("act-button1");
 actButt.onclick = function () {

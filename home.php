@@ -52,151 +52,75 @@
     <!-- members region start -->
 
     <?php
-        // staff to get content of Committee member 
+    // staff to get content of Committee member 
     ?>
     <div class="title members-title">
         Our Committee Members
     </div>
     <div class="content">
         <div class="members-list">
-            <div class="member">
-                <img src="./images/bush.jpg" class="member-picture">
-                <span class="span"><input type="button" id="btn" value="More Details"></span>
-                <div class="member-name">
-                    Haytham Gharam <br> position
-                </div>
-                <div id="popup" class="popup">
-                    <div class="memberDescription">
-                        <span class="close">&times;</span>
-                        <img src="./images/bush.jpg" class="description-picture">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, ab, labore in sit,
-                            molestias
-                            nobis ipsa quo dolores repellat blanditiis nemo repudiandae doloremque ad nesciunt.
-                            Temporibus minima provident eaque! Optio totam excepturi perferendis! Saepe dolore officiis
-                            rem nobis. Cumque quia magni id soluta ipsa quas, quo distinctio delectus. Dolor,
-                            error. <br><br><a href="#"><i class="fab fa-facebook fa-2x"></i></a></p>
 
-                    </div>
+            <div class="member">
+                <img src="/images/members/yessine.jpg" class="member-picture">
+                <span class="span"><input type="button" id="mem-btn" value="More Details"></span>
+                <div class="member-name">
+                    Mohamed Yessine Ksibi <br> Chairman
                 </div>
             </div>
-            <div class="member">
-                <img src="./images/bush.jpg" class="member-picture">
-                <span class="span"><input type="button" id="btn1" value="More Details"></span>
-                <div class="member-name">
-                    Haytham Gharam <br> position
-                </div>
-                <div id="popup1" class="popup">
-                    <div class="memberDescription">
-                        <span class="close1">&times;</span>
-                        <img src="./images/bush.jpg" class="description-picture">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, ab, labore in sit,
-                            molestias
-                            nobis ipsa quo dolores repellat blanditiis nemo repudiandae doloremque ad nesciunt.
-                            Temporibus minima provident eaque! Optio totam excepturi perferendis! Saepe dolore officiis
-                            rem nobis. Cumque quia magni id soluta ipsa quas, quo distinctio delectus. Dolor,
-                            . <br><br><a href="#"><i class="fab fa-facebook fa-2x"></i></a></p>
 
-                    </div>
+            <div class="member">
+                <img src="/images/members/imen.jpeg" class="member-picture">
+                <span class="span"><input type="button" id="mem-btn1" value="More Details"></span>
+                <div class="member-name">
+                    Imen Khlif <br> General Secretary
                 </div>
             </div>
-            <div class="member">
-                <img src="./images/bush.jpg" class="member-picture">
-                <span class="span"><input type="button" id="btn2" value="More Details"></span>
-                <div class="member-name">
-                    Haytham Gharam <br> position
-                </div>
-                <div id="popup2" class="popup">
-                    <div class="memberDescription">
-                        <span class="close2">&times;</span>
-                        <img src="./images/bush.jpg" class="description-picture">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, ab, labore in sit,
-                            molestias
-                            nobis ipsa quo dolores repellat blanditiis nemo repudiandae doloremque ad nesciunt.
-                            Temporibus minima provident eaque! Optio totam excepturi perferendis! Saepe dolore officiis
-                            rem nobis. Cumque quia magni id soluta ipsa quas, quo distinctio delectus. Dolor,
-                            error. <br><br><a href="#"><i class="fab fa-facebook fa-2x"></i></a></p>
 
-                    </div>
+            <div class="member">
+                <img src="/images/members/samar.jpg" class="member-picture">
+                <span class="span"><input type="button" id="mem-btn2" value="More Details"></span>
+                <div class="member-name">
+                    Samar Ben Taher <br> Treasurer
                 </div>
             </div>
-            <div class="member">
-                <img src="./images/bush.jpg" class="member-picture">
-                <span class="span"><input type="button" id="btn3" value="More Details"></span>
-                <div class="member-name">
-                    Haytham Gharam <br> position
-                </div>
-                <div id="popup3" class="popup">
-                    <div class="memberDescription">
-                        <span class="close3">&times;</span>
-                        <img src="./images/bush.jpg" class="description-picture">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, ab, labore in sit,
-                            molestias
-                            nobis ipsa quo dolores repellat blanditiis nemo repudiandae doloremque ad nesciunt.
-                            Temporibus minima provident eaque! Optio totam excepturi perferendis! Saepe dolore officiis
-                            rem nobis. Cumque quia magni id soluta ipsa quas, quo distinctio delectus. Dolor,
-                            error. <br><br><a href="#"><i class="fab fa-facebook fa-2x"></i></a></p>
 
-                    </div>
+            <div class="member">
+                <img src="/images/members/rihem.jpg" class="member-picture">
+                <span class="span"><input type="button" id="mem-btn3" value="More Details"></span>
+                <div class="member-name">
+                    Rihem Lahmar<br> Design Manager
                 </div>
             </div>
-            <div class="member">
-                <img src="./images/bush.jpg" class="member-picture">
-                <span class="span"><input type="button" id="btn4" value="More Details"></span>
-                <div class="member-name">
-                    Haytham Gharam <br> position
-                </div>
-                <div id="popup4" class="popup">
-                    <div class="memberDescription">
-                        <span class="close4">&times;</span>
-                        <img src="./images/bush.jpg" class="description-picture">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, ab, labore in sit,
-                            molestias
-                            nobis ipsa quo dolores repellat blanditiis nemo repudiandae doloremque ad nesciunt.
-                            Temporibus minima provident eaque! Optio totam excepturi perferendis! Saepe dolore officiis
-                            rem nobis. Cumque quia magni id soluta ipsa quas, quo distinctio delectus. Dolor,
-                            error. <br><br><a href="#"><i class="fab fa-facebook fa-2x"></i></a></p>
 
-                    </div>
+            <div class="member">
+                <img src="/images/members/fatma.jpg" class="member-picture">
+                <span class="span"><input type="button" id="mem-btn4" value="More Details"></span>
+                <div class="member-name">
+                    Fatma Mbarek<br> Media Manager
                 </div>
             </div>
-            <div class="member">
-                <img src="./images/bush.jpg" class="member-picture">
-                <span class="span"><input type="button" id="btn5" value="More Details"></span>
-                <div class="member-name">
-                    Haytham Gharam <br> position
-                </div>
-                <div id="popup5" class="popup">
-                    <div class="memberDescription">
-                        <span class="close5">&times;</span>
-                        <img src="./images/bush.jpg" class="description-picture">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, ab, labore in sit,
-                            molestias
-                            nobis ipsa quo dolores repellat blanditiis nemo repudiandae doloremque ad nesciunt.
-                            Temporibus minima provident eaque! Optio totam excepturi perferendis! Saepe dolore officiis
-                            rem nobis. Cumque quia magni id soluta ipsa quas, quo distinctio delectus. Dolor,
-                            error. <br><br><a href="#"><i class="fab fa-facebook fa-2x"></i></a></p>
 
-                    </div>
+            <div class="member">
+                <img src="/images/members/bedis.jpg" class="member-picture">
+                <span class="span"><input type="button" id="mem-btn5" value="More Details"></span>
+                <div class="member-name">
+                    Bedis Dhouib <br> Technical Manager
                 </div>
             </div>
-            <div class="member">
-                <img src="./images/bush.jpg" class="member-picture">
-                <span class="span"><input type="button" id="btn6" value="More Details"></span>
-                <div class="member-name">
-                    Haytham Gharam <br> position
-                </div>
-                <div id="popup6" class="popup">
-                    <div class="memberDescription">
-                        <span class="close6">&times;</span>
-                        <img src="./images/bush.jpg" class="description-picture">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, ab, labore in sit,
-                            molestias
-                            nobis ipsa quo dolores repellat blanditiis nemo repudiandae doloremque ad nesciunt.
-                            Temporibus minima provident eaque! Optio totam excepturi perferendis! Saepe dolore officiis
-                            rem nobis. Cumque quia magni id soluta ipsa quas, quo distinctio delectus. Dolor,
-                            error. <br><br><a href="#"><i class="fab fa-facebook fa-2x"></i></a></p>
 
-                    </div>
+            <div class="member">
+                <img src="/images/members/firas.jpg" class="member-picture">
+                <span class="span"><input type="button" id="mem-btn6" value="More Details"></span>
+                <div class="member-name">
+                    Firas Raouin <br> Event Manager
+                </div>
+            </div>
+
+            <div class="member">
+                <img src="/images/members/bilel.jpg" class="member-picture">
+                <span class="span"><input type="button" id="mem-btn7" value="More Details"></span>
+                <div class="member-name">
+                    Bilel Baccour <br> Communication Manager
                 </div>
             </div>
         </div>
@@ -204,11 +128,11 @@
     <!-- members region end -->
 
     <?php
-        //staff to grab Activities 
+    //staff to grab Activities 
     ?>
     <!-- activities region start -->
     <div class="activities-title">
-        Our Activities
+        Our Latest Activities
     </div>
     <div class="content">
         <div class="activities-display">
