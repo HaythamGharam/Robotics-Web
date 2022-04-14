@@ -1,7 +1,7 @@
 <?php
-    @set_time_limit(0);
+   @set_time_limit(0);
     error_reporting(0);
-    session_start();
+    session_start(); 
     require_once("class.contact.php");
     $contact = new Contact(); 
     if(isset($_REQUEST["submit"])){
